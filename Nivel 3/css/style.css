@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    padding: 20px 0px 10px 20px ;
+    border-bottom: 1px solid rgb(139, 139, 139, 0.4);
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+
+
+/* MESSAGES WHEN CREATING A PRODUCT */
+.messages{
+    margin: auto;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.messageCorrect{
+    font-size: 14px;
+    border-radius: 5px;
+    background: rgb(50, 209, 50);
+    color: #ffffff;
+    padding: 20px;
+}
+
+.messageIncorrect{
+    font-size: 14px;
+    border-radius: 5px;
+    background: rgb(212, 40, 75);
+    color: #ffffff;
+    padding: 20px;
+}
+
+
+
+/* FORM */
+.productDiv{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#form{
+    width: 25%;
+}
+
+.formDiv{
+    box-shadow: 0 0 2px rgb(139, 139, 139, 0.8);
+    border-radius: 10px;
+    margin: 30px 30px 0 0;
+}
+
+.formDiv h3{
+    background: rgb(139, 139, 139, 0.3);
+    border-bottom: 1px solid rgb(139, 139, 139, 0.4);
+    border-radius: 10px 10px 0 0;
+    padding: 10px 20px;
+}
+
+.formGroup{
+    margin: 0 20px
+}
+
+.formDiv input{
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(139, 139, 139, 0.4); 
+}
+
+#name{
+    margin-top: 20px
+}
+
+.btnSubmit{
+    border-radius: 10px;
+    background-color: rgb(90, 20, 139);
+    width: 100%;
+    color: #ffffff;
+    padding: 10px 15px;
+    margin: 10px 0 20px 0;
+    cursor: pointer;
+    border: none;
+}
+
+.btnSubmit:hover{
+    background-color: rgba(108, 48, 151, 0.788);
+}
+
+
+
+/* SHOW PRODUCTS */
+.showProducts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 75%;
+}
+
+.showCreatedProduct{
+    border: 1px solid rgb(139, 139, 139, 0.4);
+    padding: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    flex-basis: fit-content;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btnDelete{
+    background: rgb(212, 40, 75);
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.btnDelete:hover{
+    background: rgba(202, 48, 79, 0.767);
+}
+
+
+
+
+/* MEDIA QUERY */
+@media (max-width: 900px){
+    .productDiv{
+        flex-direction: column;
+    }
+
+    #form{
+        width: 50%;
+        margin: auto;
+    }
+
+    .formDiv{
+        margin-bottom: 15px;
+    }
+    .showProducts{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 600px){
+    #form{
+        width: 70%;
+    }
+}

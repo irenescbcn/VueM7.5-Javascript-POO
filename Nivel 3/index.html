@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue M7.5 - Javascript POO Formulario</title>
+    <!-- GOOGLE FONTS: POPPINS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Product App</h1>
+    </header>
+
+
+    <div class="container" id="container">
+        <!-- MESSAGE -->
+        <div class="messages" id="messages"></div>
+
+        <div class="productDiv" id="productDiv">
+            <!-- FORM -->
+            <form action="" id="form">
+                <div class="formDiv">
+                    <h3>Add A Product</h3>
+                    <div class="formGroup">
+                        <input type="text" placeholder="Product Name" name="name" id="name">
+                        <label for="name"></label>
+                    </div>
+                    <div class="formGroup">
+                        <input type="number" placeholder="Product Price" step="0.01" name="price" id="price">
+                        <label for="price"></label>
+                    </div>
+                    <div class="formGroup">
+                        <input type="number" placeholder="Product Year" value="2018" name="Year" id="year">
+                        <label for="year"></label>
+                    </div>
+                    <div class="formGroup">
+                        <button type="submit" class="btnSubmit">Save</button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- PRODUCTS -->
+            <div class="showProducts" id="showProducts"></div>
+        </div>
+    </div>
+
+
+    <script src="script/productClass.js"></script>
+    <script src="script/app.js"></script>
+
+</body>
+</html>
