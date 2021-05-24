@@ -25,6 +25,9 @@ header{
     margin: auto;
     width: 100%;
     margin-top: 20px;
+    white-space: normal;
+    height: 60px;
+    overflow: visible;
 }
 
 .messageCorrect{
@@ -50,10 +53,11 @@ header{
     display: flex;
     flex-direction: row;
     width: 100%;
+    white-space: nowrap;
 }
 
 #form{
-    width: 25%;
+    width: 25%;  
 }
 
 .formDiv{
@@ -109,6 +113,7 @@ header{
     justify-content: center;
     align-content: center;
     width: 75%;
+    
 }
 
 .showCreatedProduct{
@@ -116,10 +121,18 @@ header{
     padding: 20px;
     font-size: 14px;
     margin-bottom: 15px;
-    flex-basis: fit-content;
     border-radius: 5px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.showCreatedProduct span{
+    flex-grow: 0.2;
     text-align: center;
 }
+
+
 
 .btnDelete{
     background: rgb(212, 40, 75);
@@ -134,6 +147,20 @@ header{
     background: rgba(202, 48, 79, 0.767);
 }
 
+
+
+
+#spanName{
+    border:none;
+    text-decoration: none;
+}
+
+#spanName:focus{
+    border:none;
+}
+#spanName:active{
+    border:none;
+}
 
 
 
@@ -154,6 +181,15 @@ header{
     .showProducts{
         width: 100%;
     }
+
+    .showCreatedProduct{
+        flex-wrap: wrap;
+    }
+
+    /* .showCreatedProduct span{
+        flex-grow: 0;
+        text-align: center;
+    } */
 }
 
 
